@@ -32,28 +32,35 @@ int maxBlock(int** z, int m, int n)
         
         if(inBox != 1 && inBox != 0)
         {
-          
-          
+          int to = k + inBox;
+          for(k = j ; k < to; k++)
+          {
+            for(l = i; l < to; l++)
+            {
+              if(z[k][l]!=1)
+              {
+                if(k - i == l - j)
+                  max = k - i - 1;
+                if(k - i < l - j)
+                  max = k - i;
+                else
+                  max = l - j;
+                goto jump ;
+              }
+              else
+                continue;
+            }
+          }
         }
-        
-        
       }
+      jump:
       else
         continue;
     }
+    
   }  
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  return max;
   
 }
 
