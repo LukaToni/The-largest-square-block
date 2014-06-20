@@ -1,0 +1,18 @@
+We will help Alex to build a house, but if we are to meet his megalomaniac 
+appetites, we must first find the largest possible square block building plots.
+In the programC language to write the function 
+
+int MaxBlock (int** z, int m, int n) 
+
+which returns the length of the sides of the square of the largest block in the table, which is composed of the ones.
+Table occupies m rows and n columns containing only ones and zeros. 
+
+For example the table:
+
+0 1 0 1 0 0 
+0 1 1 1 1 0 
+0 1 1 1 1 1 
+0 0 1 1 1 1 
+1 0 0 1 0 1 
+
+the length of the sides of the maximum digit of the block is equal to 3
